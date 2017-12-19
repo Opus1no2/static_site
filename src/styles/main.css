@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+.main-cont {
+  padding-left: 20em;
+  padding-right: 20em;
+}
+
+.main-header {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 20em;
+  padding-right: 20em;
+  background: #65a3f1;
+  color: white;
+}
+
+section {
+  padding-top: 5em;
+}

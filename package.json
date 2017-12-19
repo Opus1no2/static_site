@@ -1,0 +1,20 @@
+{
+  "name": "static_site",
+  "version": "0.0.0",
+  "repository": "https://github.com/Opus1no2/static_site.git",
+  "author": "travis <tillotson.travis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "serve": "./node_modules/.bin/webpack-dev-server",
+    "deploy": "yarn run build && cd dist/ && aws s3 sync . s3://ttillotson-static"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
